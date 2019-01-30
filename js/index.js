@@ -48,4 +48,10 @@ headerLogo.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleLogo = document.getElementById("middle-img");
 middleLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-
+let anchors = document.querySelectorAll("a");
+anchors[0].textContent = siteContent.nav["nav-item-1"];
+anchors[1].textContent = siteContent.nav["nav-item-2"];
+anchors[2].textContent = siteContent.nav["nav-item-3"];
+anchors[3].textContent = siteContent.nav["nav-item-4"];
+anchors[4].textContent = siteContent.nav["nav-item-5"];
+anchors[5].textContent = siteContent.nav["nav-item-6"];
