@@ -39,6 +39,7 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -59,7 +60,19 @@ anchors[5].textContent = siteContent.nav["nav-item-6"];
 let h1 = document.querySelector("h1");
 h1.innerHTML = siteContent.cta.h1.replace(new RegExp(" ", 'g'), '<br> ');
 
-
-// h1.style.flexDirection = "column";
 let button = document.querySelector("button");
 button.textContent = siteContent.cta.button;
+
+let topics = document.querySelectorAll('.text-content h4');
+topics[0].textContent = siteContent["main-content"]["features-h4"];
+topics[1].textContent = siteContent["main-content"]["about-h4"];
+topics[2].textContent = siteContent["main-content"]["services-h4"];
+topics[3].textContent = siteContent["main-content"]["product-h4"];
+topics[4].textContent = siteContent["main-content"]["vision-h4"];
+
+let topicsContent = document.querySelectorAll('.text-content p');
+topicsContent[0].textContent = siteContent["main-content"]["features-content"]
+topicsContent[1].textContent = siteContent["main-content"]["about-content"]
+topicsContent[2].textContent = siteContent["main-content"]["services-content"]
+topicsContent[3].textContent = siteContent["main-content"]["product-content"]
+topicsContent[4].textContent = siteContent["main-content"]["vision-content"]
