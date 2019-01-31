@@ -105,3 +105,5 @@ let anchorsColors = document.querySelectorAll('a');
 for (let i = 0; i < anchorsColors.length; i++){
   anchorsColors[i].style.color = "green";
 }
+
+//MVP Complete
