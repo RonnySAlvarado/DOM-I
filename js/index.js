@@ -87,3 +87,21 @@ contactsContent[2].textContent = siteContent.contact.email;
 
 let footer = document.querySelector('footer');
 footer.innerHTML = siteContent.footer.copyright.replace("2018", "2018<br> ");
+
+let newCoolAnchor = document.createElement('a');
+newCoolAnchor.setAttribute('href', '#');
+newCoolAnchor.textContent = 'Cool Stuff';
+
+let newNotCoolAnchor = document.createElement('a');
+newNotCoolAnchor.setAttribute('href', '#');
+newNotCoolAnchor.textContent = 'Not Cool Stuff';
+
+let navigationBar = document.querySelector("nav");
+navigationBar.appendChild(newCoolAnchor);
+navigationBar.prepend(newNotCoolAnchor);
+
+let anchorsColors = document.querySelectorAll('a');
+
+for (let i = 0; i < anchorsColors.length; i++){
+  anchorsColors[i].style.color = "green";
+}
