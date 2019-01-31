@@ -55,3 +55,11 @@ anchors[2].textContent = siteContent.nav["nav-item-3"];
 anchors[3].textContent = siteContent.nav["nav-item-4"];
 anchors[4].textContent = siteContent.nav["nav-item-5"];
 anchors[5].textContent = siteContent.nav["nav-item-6"];
+
+let h1 = document.querySelector("h1");
+h1.innerHTML = siteContent.cta.h1.replace(new RegExp(" ", 'g'), '<br> ');
+
+
+// h1.style.flexDirection = "column";
+let button = document.querySelector("button");
+button.textContent = siteContent.cta.button;
