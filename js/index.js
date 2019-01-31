@@ -62,6 +62,7 @@ h1.innerHTML = siteContent.cta.h1.replace(new RegExp(" ", 'g'), '<br> ');
 
 let button = document.querySelector("button");
 button.textContent = siteContent.cta.button;
+button.addEventListener("click", function(){ button.textContent = "Ronny is Awesome!"; return button.textContent; });
 
 let topics = document.querySelectorAll('.text-content h4');
 topics[0].textContent = siteContent["main-content"]["features-h4"];
