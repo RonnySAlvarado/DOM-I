@@ -76,3 +76,14 @@ topicsContent[1].textContent = siteContent["main-content"]["about-content"]
 topicsContent[2].textContent = siteContent["main-content"]["services-content"]
 topicsContent[3].textContent = siteContent["main-content"]["product-content"]
 topicsContent[4].textContent = siteContent["main-content"]["vision-content"]
+
+let contacts = document.querySelector('.contact h4');
+contacts.textContent = siteContent.contact["contact-h4"];
+
+let contactsContent = document.querySelectorAll('.contact p');
+contactsContent[0].innerHTML = siteContent.contact.address.replace("Street", "Street<br> ");
+contactsContent[1].textContent = siteContent.contact.phone;
+contactsContent[2].textContent = siteContent.contact.email;
+
+let footer = document.querySelector('footer');
+footer.innerHTML = siteContent.footer.copyright.replace("2018", "2018<br> ");
